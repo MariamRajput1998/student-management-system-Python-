@@ -26,3 +26,36 @@ class Student:
         self.db.commit()
         print("✏️ Student updated successfully!")
 
+        def update_student(self, student):
+        sql = """
+        UPDATE students
+        SET name=%(name)s, age=%(age)s, course=%(course)s, email=%(email)s
+        WHERE id=%(id)s
+        """
+        self.cursor.execute(sql, student)
+        self.db.commit()
+        print("✏️ Student updated successfully!")
+
+    def delete_student(self, student_id):
+        self.cursor.execute(
+            "DELETE FROM students WHERE id=%s", (student_id,)
+        )
+        self.db.commit()
+        print("🗑️ Student deleted successfully!")
+
+    def search_by_id(self, student_id):
+        self.cursor.execute(
+            "SELECT * FROM students WHERE id=%s", (student_id,)
+        )
+        return self.cursor.fetchall()
+
+    def search_by_name(self, name):
+        self.cursor.execute(
+            "SELECT * FROM students WHERE name LIKE %s",
+            ('%' + name + '%',)
+        )
+        return self.cursor.fetchall()
+
+    def close(self):
+        self.cursor.close()
+        self.db.close()

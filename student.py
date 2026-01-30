@@ -11,3 +11,18 @@ class Student:
         self.cursor.execute(sql, student)
         self.db.commit()
         print("✅ Student added successfully!")
+
+    def view_students(self):
+        self.cursor.execute("SELECT * FROM students")
+        return self.cursor.fetchall()
+
+    def update_student(self, student):
+        sql = """
+        UPDATE students
+        SET name=%(name)s, age=%(age)s, course=%(course)s, email=%(email)s
+        WHERE id=%(id)s
+        """
+        self.cursor.execute(sql, student)
+        self.db.commit()
+        print("✏️ Student updated successfully!")
+

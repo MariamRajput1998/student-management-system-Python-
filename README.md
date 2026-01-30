@@ -1,9 +1,9 @@
 <h1>student-management-system-Python-</h1>
 A lightweight command-line interface (CLI) tool for managing student data. Built with a focus on Object-Oriented Programming (OOP) principles and persistent file storage. Add, Update, View, Search, and Delete student records. Persistent data storage using MySQL. Search functionality by Student ID.
-Developer: Mariam Safdar & Ayesha Mehtab<br>
+Developer: Mariam Safdar & Ayesha Mehtab
 
 <h2>Features:</h2>
-<p>Student Data Management (CRUD operations):The primary function is to manage student records efficiently. This includes:</p><br>
+<p>Student Data Management (CRUD operations):The primary function is to manage student records efficiently. This includes:</p>
 <h4>Adding new students:</h4> <p> Entering details such as name, age, ID, course and email into the MySQL database.</p><br>
 <h4></h4>Viewing student details:</h4> <p>Displaying records of all students or a specific student via the command line.</p><br>
 #Updating student information: Modifying existing records (e.g., updating phone numbers, grades, or personal details).

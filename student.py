@@ -28,16 +28,6 @@ class Student:
         self.db.commit()
         print("✏️ Student updated successfully!")
 
-        def update_student(self, student):
-        sql = """
-        UPDATE students
-        SET name=%(name)s, age=%(age)s, course=%(course)s, email=%(email)s
-        WHERE id=%(id)s
-        """
-        self.cursor.execute(sql, student)
-        self.db.commit()
-        print("✏️ Student updated successfully!")
-
     def delete_student(self, student_id):
         self.cursor.execute(
             "DELETE FROM students WHERE id=%s", (student_id,)

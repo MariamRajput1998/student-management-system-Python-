@@ -1,3 +1,5 @@
+from db_connection import Database
+
 class Student:
     def __init__(self):
         self.db = Database.get_connection()

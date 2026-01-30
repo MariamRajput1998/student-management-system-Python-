@@ -3,9 +3,9 @@ A lightweight command-line interface (CLI) tool for managing student data. Built
 Developer: Mariam Safdar & Ayesha Mehtab<br>
 
 <h2>Features:</h2>
-#Student Data Management (CRUD operations): The primary function is to manage student records efficiently. This includes:
-#Adding new students: Entering details such as name, age, ID, course and email into the MySQL database.
-#Viewing student details: Displaying records of all students or a specific student via the command line.
+<p>Student Data Management (CRUD operations):The primary function is to manage student records efficiently. This includes:</p><br>
+<h4>Adding new students:</h4> <p> Entering details such as name, age, ID, course and email into the MySQL database.</p><br>
+<h4></h4>Viewing student details:</h4> <p>Displaying records of all students or a specific student via the command line.</p><br>
 #Updating student information: Modifying existing records (e.g., updating phone numbers, grades, or personal details).
 #Deleting student records: Removing student entries from the database, typically using a unique identifier like a student ID or roll number.
 #Search and Filter Functionality: Users can search for specific student records using criteria such as ID, name, or roll number to quickly retrieve information.
